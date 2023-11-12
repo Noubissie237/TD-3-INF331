@@ -14,9 +14,10 @@ public class Pointcol extends Point { // la class Pointcol herite de la class Po
         this.couleur = couleur;
     }
 
-    public void afficheCol()
+    @Override
+    public void afficher()
     {
-        afficher();
+        super.afficher();
         System.out.println("Je suis de couleur "+this.couleur);
     }
 
