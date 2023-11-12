@@ -23,4 +23,10 @@ public class Point {
     {
         System.out.println("Je suis un point de coordonnées "+this.abscisse+" et "+this.ordonnée);
     }
+
+    public void identifie()
+    {
+        System.out.println("Je suis un point");
+    }
+
 }

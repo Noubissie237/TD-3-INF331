@@ -6,16 +6,12 @@ public class prog
     {
         /*          PROGRAMME DE  TEST         */
 
-        Point tab [] = new Point[3]; // tableau d'instances pour la mise en œuvre du polymorphisme
+        Point tab[] = new Point[2];
 
-        tab[0] = new Point(1, 2); // Creation d'une instance de point
-        tab[1] = new Pointcol(3, 4, "Green"); // Creation d'une instance de pointcol
-        tab[2] = new Point(5, 6); // Creation d'une instance de point
+        tab[0] = new Pointcol(1, 2, "red");
+        tab[1] = new Point(3, 4);
 
-        for (Point point : tab) {
-            System.out.println("------------------------------------");
-            point.afficher();
-        }
-
+        tab[0].identifie();
+        tab[1].identifie();
     }
 }
