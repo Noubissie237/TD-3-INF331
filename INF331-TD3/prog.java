@@ -6,15 +6,15 @@ public class prog
     {
         /*          PROGRAMME DE  TEST         */
 
-        Point pt = new Point(); // Création d'une instance de Point
+        Pointcol ptc = new Pointcol(0, 0, "white");
 
-        pt.initialiser(0, 0); // Initialisation des coordonées à [0 ; 0]
+        ptc.afficheCol(); // affichage du point et de sa couleur
 
-        pt.afficher(); // affichage
+        ptc.colorer("blue"); // Coloration du point en bleu
 
-        pt.deplacer(3, 7.5f); // deplacement du point vers la position [3 ; 7.5]
+        ptc.deplacer(5, 2); // Déplacement du point
 
-        pt.afficher(); // affichage
+        ptc.afficheCol(); // affichage du point mis à jour
 
     }
 }

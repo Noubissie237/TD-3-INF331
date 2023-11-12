@@ -4,8 +4,8 @@ public class Point {
     
     protected float abscisse, ordonnée; // Coordonnées du point
 
-    /*  Méthode initialiser permettant d'attribuer des valeurs aux coordonnées du point */
-    public void initialiser(float Abscisse, float Ordonnée)
+    /*  Ajout d'un contructeur (et suppression de la méthode initialiser) */
+    public Point(float Abscisse, float Ordonnée)
     {
         this.abscisse = Abscisse;
         this.ordonnée = Ordonnée;
