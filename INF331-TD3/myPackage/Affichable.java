@@ -1,5 +1,5 @@
 package myPackage;
 
-public abstract class Affichable {
+public interface Affichable {
     public abstract void affiche();
 }

@@ -1,6 +1,6 @@
 package myPackage;
 
-public class classDeriv1 extends Affichable {
+public class classDeriv1 implements Affichable {
     protected final int valeur = 25;
 
     @Override
