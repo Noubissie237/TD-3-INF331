@@ -5,13 +5,14 @@ public class prog
     public static void main(String[] args)
     {
         /*          PROGRAMME DE  TEST         */
+        
+        Affichable aff[] = new Affichable[2]; // création du tableau
 
-        Point tab[] = new Point[2];
-
-        tab[0] = new Pointcol(1, 2, "red");
-        tab[1] = new Point(3, 4);
-
-        tab[0].identifie();
-        tab[1].identifie();
+        aff[0] = new classDeriv1(); // Instance de la class dérivée 1
+        aff[1] = new classDeriv2(); // Instance de la class dérivée 2
+        for (Affichable elt : aff) {
+            elt.affiche(); // Affichage
+        }
+    
     }
 }
