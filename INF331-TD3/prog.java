@@ -4,7 +4,7 @@ public class prog
 {
     public static void main(String[] args)
     {
-        Compte cmpt[] = new Compte[3];
+        Compte cmpt[] = new Compte[4];
         
         /*      Premier Compte (Compte simple) */
         cmpt[0] = new Compte("690232120", "Noubissie", 5000f);
@@ -15,6 +15,7 @@ public class prog
         /*      Troisieme Compte (Compte Securisé) */
         cmpt[2] = new CompteSecurise("620269993", "Wilfried", 5000f);
         
+        cmpt[3] = new CompteFinal("690232120", "NK", 25000f);
 
         for (Compte compte : cmpt)
         {
@@ -26,6 +27,8 @@ public class prog
             compte.Deposer(8000f); // Depot de 8000f
             compte.printInfos(); // Affichage 
             compte.Retirer(50000); // retrait d'un gros montant (depassant mon solde)
+            compte.printInfos(); // Affichage 
+            compte.Deposer(500f); // Depot de 8000f
             compte.printInfos(); // Affichage 
         }
 
