@@ -28,7 +28,7 @@ public class prog
             compte.printInfos(); // Affichage 
             compte.Retirer(50000); // retrait d'un gros montant (depassant mon solde)
             compte.printInfos(); // Affichage 
-            compte.Deposer(500f); // Depot de 8000f
+            compte.Deposer(500f); // Depot de 500f
             compte.printInfos(); // Affichage 
         }
 
