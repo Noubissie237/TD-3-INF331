@@ -26,8 +26,29 @@ public class prog
         }
     }
 
+    public static class Carre extends Forme
+    {
+        protected float cote;
+
+        public Carre(float c)
+        {
+            this.cote = c;
+        }
+
+        @Override
+        public float aire() {
+            return (this.cote * this.cote);
+        }
+    }
+
     public static void main(String[] args) {
-        Forme forme = new Triangle(2f, 5f);
-        System.out.println("Aire : "+forme.aire());
+        Forme forme1 = new Forme();
+        Forme forme2 = new Forme();
+        Triangle triangle = new Triangle(12, 3);
+        Carre carre = new Carre(4);
+        forme1 = triangle;
+        forme2 = carre;
+        System.out.println("Aire : "+forme1.aire());
+        System.out.println("Aire : "+forme2.aire());
     }
 }
