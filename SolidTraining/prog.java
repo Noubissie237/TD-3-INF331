@@ -1,36 +1,33 @@
 public class prog
 {
 
-    public static class GestionClient {
-        private String nom;
-        private int age;
-    
-        public GestionClient(String nom, int age) {
-            this.nom = nom;
-            this.age = age;
-        }
-    
-        public int getAge() {
-            return age;
-        }
-    
-        public String getNom() {
-            return nom;
+    public static class Forme
+    {
+        public float aire()
+        {
+            return 0f;
         }
     }
-    
-    public static class CourrielService {
-        public void envoyerCourriel(GestionClient client) {
-            System.out.println("Courriel envoyé à " + client.getNom());
-        }
-    }
-    
-    public static void main(String[] args) {
-        GestionClient client = new GestionClient("Noubissie", 23);
-        CourrielService courrielService = new CourrielService();
-        courrielService.envoyerCourriel(client);
 
-        System.out.println("Nom : " + client.getNom());
-        System.out.println("Age : " + client.getAge() + " ans");
+    public static class Triangle extends Forme
+    {
+        protected float Largeur;
+        protected float longueur;
+
+        public Triangle(float L, float l)
+        {
+            this.longueur = l;
+            this.Largeur = L;
+        }
+
+        @Override
+        public float aire() {
+            return (this.longueur * this.Largeur);
+        }
+    }
+
+    public static void main(String[] args) {
+        Forme forme = new Triangle(2f, 5f);
+        System.out.println("Aire : "+forme.aire());
     }
 }
